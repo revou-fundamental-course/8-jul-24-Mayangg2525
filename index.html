@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!--Main Title-->
+    <header class="main-title">
+        <h1>Calculator BMI</h1>
+    </header>
+
+    <main>
+        <!--Left Content-->
+        <section class="main-content">
+        <!--Main Article-->
+        <article class="article-main">
+            <p>Mari gunakan kalkulator Indeks Massa Tubuh (BMI) untuk memahami kondisi kesehatan kita dengan lebih baik! Yuk, cek BMI Anda sekarang dan mulai perjalanan menuju hidup yang lebih sehat!</p>
+        </article>
+
+        <!--Form-->
+        <section>
+            <form>
+                <div>
+                    <div class="input-title">Jenis Kelamin</div>
+                    <input type="radio" id="selection-man"><label for="selection-man">Laki-Laki</label>
+                    <input type="radio" id="selection-woman"><label for="selection-woman">Perempuan</label>
+                </div>
+                <div>
+                    <label>Usia (th)</label>
+                    <input type="number" id="input-usia" required>
+                </div>
+                <div>
+                    <label>Berat Badan (kg)</label>
+                    <input type="number" id="input-berat-badan" required>
+                </div>
+                <div>
+                    <label>Tinggi badan (cm)</label>
+                    <input type="number" id="input-tinggi-badan" required>
+                </div>
+                <div>
+                    <button class="button submit" type="button" onclick="updateResult();">Submit BMI</button>
+                    <button class="button reset" type="button">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <!--Right Content-->
+        <section class="main-content">
+            <!--Result Article-->
+        <article>
+            <header>
+                <h1>Result</h1>
+            </header>
+
+            <!--Result Section-->
+            <section class="result-section">
+                <p>Hasil Result adalah</p>
+                
+                <h2 id="bmi-result">24,7</h2>
+                
+                <p>Anda memiliki berat badan berlebih</p>
+                <div>
+                    <button class="button download">Download Hasil BMI</button>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
