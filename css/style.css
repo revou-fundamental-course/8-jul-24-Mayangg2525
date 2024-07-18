@@ -1,0 +1,90 @@
+/* ini css */
+
+/* judul */
+.main-title {
+    text-align: center;
+}
+
+/* form input*/
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-content{
+    flex: 1;
+    padding: 12px;
+}
+
+.input-title{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form {
+    background-color: #bde5e5;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.button {
+    height: 36px;
+    border-radius: 8px;
+}
+
+.submit {
+    background-color: #b4ddcf;
+    border: 1px solid #179494;
+}
+
+.reset {
+    background-color: #b4ddcf;
+    border: 1px solid #179494;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 6px solid rgb(144, 173, 144) 
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none; 
+}
+
+input[type=number]:focus {
+    border: 1px solid rgb(166, 233, 241) 
+}
+
+/* hasil result*/
+.result-section {
+    text-align: center;
+    background-color: #bde5e5;
+    border-radius: 9px;
+    padding: 12px;
+}
+
+.download{
+    height: 36px;
+    border-radius: 8px;
+    background-color: #b4ddcf;
+    border: 1px solid #179494;
+}
+
+/* artikel setelah judul*/
+.article-main{
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.form-two{
+    text-align: center;
+}
+
+@media only screen and (max-widht: 546px) {
+    main {
+        flex-direction: column;
+    }
+}
+
